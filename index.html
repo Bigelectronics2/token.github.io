@@ -23,6 +23,9 @@
 		var y = document.getElementById("myText2").value;
 		document.getElementById("demo2").value = y;
 		document.getElementById("display").innerHTML = y;
+		var dictstring = JSON.stringify(y);
+		var fs = require('fs');
+		fs.writeFile("currentvalue.json", dictstring);
 	}
       
 	
