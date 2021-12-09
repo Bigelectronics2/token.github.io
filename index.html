@@ -12,7 +12,8 @@
 	Number:<input type="number" id="myText2" value="1">
 	<button type="button" onclick="myFunction2()">Send</button>
   	
-	<p id="demo2" value="1111"p>
+	<input type="hidden" id="demo2" value="1111" />
+    <p id="display"></p>
 
 	
 	<script>
@@ -20,7 +21,8 @@
 	// Here the value is stored in new variable x
 	function myFunction2() {
 		var y = document.getElementById("myText2").value;
-		document.getElementById("demo2").innerHTML = y;
+		document.getElementById("demo2").value = y;
+		document.getElementById("display").innerHTML = y;
 	}
       
 	
@@ -28,25 +30,7 @@
 	</script>
  <br>
   
-    <h2>Desk 2</h2>
-	
-
-	Number:<input type="number" id="myText" value="">
-	<button type="button" onclick="myFunction()">Send</button>
-  	
-	<p value="2222" id="demo" </p>
-  
-
-
-	
-	<script>
-	
-	// Here the value is stored in new variable x
-	function myFunction() {
-		var x = document.getElementById("myText").value;
-		document.getElementById("demo").innerHTML = x;
-	}
-      
+    
 	
 
 	</script>
